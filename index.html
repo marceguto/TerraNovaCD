@@ -142,15 +142,17 @@
             </div>
         </section>
 
-        <!-- Seção de Análise Econômica -->
+         <!-- Seção de Análise Econômica Consolidada -->
         <section id="analise-economica" class="mb-12">
             <div class="card p-6 md:p-8">
                 <h2 class="flex items-center text-2xl md:text-3xl">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
                     4. Análise Econômica do Acordo
                 </h2>
-                <p class="mb-6">A decisão de celebrar o acordo é fundamentalmente econômica. A análise baseia-se nos dados do ativo "Rosas", extraídos da planilha de projeção de portfólio.</p>
+                <p class="mb-6">A decisão de celebrar o acordo é fundamentalmente econômica. A análise abaixo detalha o impacto consolidado e individual nos portfólios de cada fundo.</p>
                 
+                <!-- Tabela Consolidada -->
+                <h3 class="text-xl md:text-2xl mt-8">Impacto Consolidado (GIF III + GIF IV)</h3>
                 <div class="overflow-x-auto">
                     <table class="min-w-full bg-white border border-gray-200 rounded-lg">
                         <thead class="bg-blue-800 text-white">
@@ -162,41 +164,75 @@
                             </tr>
                         </thead>
                         <tbody class="text-gray-700">
-                            <tr class="border-b">
-                                <td class="py-3 px-4 font-medium">Valor Líquido a Receber</td>
-                                <td class="py-3 px-4">R$ 363,45 M + R$ 63,01 M futuros</td>
-                                <td class="py-3 px-4">R$ 363,45 M + R$ 53,86 M futuros</td>
-                                <td class="py-3 px-4 text-red-600">Redução do valor futuro em R$ 9,15 M</td>
-                            </tr>
-                            <tr class="bg-gray-50 border-b">
-                                <td class="py-3 px-4 font-medium">Data do Último Pagamento</td>
-                                <td class="py-3 px-4">Dezembro/2029</td>
-                                <td class="py-3 px-4">Setembro/2025</td>
-                                <td class="py-3 px-4 text-green-600 font-bold">Antecipação de mais de 4 anos no fluxo de caixa</td>
-                            </tr>
-                            <tr class="border-b">
-                                <td class="py-3 px-4 font-medium">Múltiplo sobre Capital ($x$)</td>
-                                <td class="py-3 px-4">13,43x</td>
-                                <td class="py-3 px-4">13,14x</td>
-                                <td class="py-3 px-4">Redução marginal do múltiplo</td>
-                            </tr>
-                            <tr class="bg-gray-50 border-b">
-                                <td class="py-3 px-4 font-medium">Taxa Interna de Retorno (TIR)</td>
-                                <td class="py-3 px-4">105,05%</td>
-                                <td class="py-3 px-4">105,10%</td>
-                                <td class="py-3 px-4 text-green-600">Manutenção da TIR em patamar elevado</td>
-                            </tr>
                              <tr class="border-b">
+                                <td class="py-3 px-4 font-medium">Valor Líquido a Receber</td>
+                                <td class="py-3 px-4">R$ 90,0 M futuros</td>
+                                <td class="py-3 px-4">R$ 77,0 M futuros</td>
+                                <td class="py-3 px-4 text-red-600">Redução do valor futuro em R$ 13,0 M</td>
+                            </tr>
+                             <tr class="bg-gray-50 border-b">
                                 <td class="py-3 px-4 font-medium">Risco de Nova Ação Judicial</td>
                                 <td class="py-3 px-4 bg-red-100">Elevado</td>
                                 <td class="py-3 px-4 bg-green-100 font-bold">Eliminado</td>
-                                <td class="py-3 px-4 text-green-600">Mitigação total do risco de litígio</td>
+                                <td class="py-3 px-4 text-green-600">Mitigação total do risco</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-3 px-4 font-medium">Liquidez do Ativo</td>
+                                <td class="py-3 px-4 bg-red-100">Bloqueada</td>
+                                <td class="py-3 px-4 bg-green-100 font-bold">Imediata</td>
+                                <td class="py-3 px-4 text-green-600">Conversão em caixa</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Tabela GIF III -->
+                <h3 class="text-xl md:text-2xl mt-8">Retornos Detalhados - GIF III</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                         <thead class="bg-gray-100">
+                            <tr>
+                                <th class="text-left py-3 px-4 font-semibold text-sm text-gray-600">Ativo</th>
+                                <th class="text-left py-3 px-4 font-semibold text-sm text-gray-600">Cenário sem Acordo</th>
+                                <th class="text-left py-3 px-4 font-semibold text-sm text-gray-600">Cenário com Acordo</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700">
+                            <tr class="border-b">
+                                <td class="py-3 px-4 font-medium">Ativo Rosas</td>
+                                <td class="py-3 px-4">Múltiplo: <strong>13.4x</strong> / TIR: <strong>105.06%</strong></td>
+                                <td class="py-3 px-4">Múltiplo: <strong>13.1x</strong> / TIR: <strong>105.10%</strong></td>
                             </tr>
                             <tr class="bg-gray-50">
-                                <td class="py-3 px-4 font-medium">Liquidez do Ativo</td>
-                                <td class="py-3 px-4 bg-red-100">Bloqueada por 4+ anos</td>
-                                <td class="py-3 px-4 bg-green-100 font-bold">Imediata</td>
-                                <td class="py-3 px-4 text-green-600">Conversão de ativo ilíquido em caixa</td>
+                                <td class="py-3 px-4 font-medium">Portfólio GIF III</td>
+                                <td class="py-3 px-4">Múltiplo: <strong>3.2x</strong> / TIR: <strong>35.25%</strong></td>
+                                <td class="py-3 px-4">Múltiplo: <strong>3.1x</strong> / TIR: <strong>35.36%</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Tabela GIF IV -->
+                 <h3 class="text-xl md:text-2xl mt-8">Retornos Detalhados - GIF IV</h3>
+                <div class="overflow-x-auto mt-4">
+                    <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="text-left py-3 px-4 font-semibold text-sm text-gray-600">Ativo</th>
+                                <th class="text-left py-3 px-4 font-semibold text-sm text-gray-600">Cenário sem Acordo</th>
+                                <th class="text-left py-3 px-4 font-semibold text-sm text-gray-600">Cenário com Acordo</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700">
+                            <tr class="border-b">
+                                <td class="py-3 px-4 font-medium">Ativo Enildo</td>
+                                <td class="py-3 px-4">Múltiplo: <strong>9.6x</strong> / TIR: <strong>166.26%</strong></td>
+                                <td class="py-3 px-4">Múltiplo: <strong>9.4x</strong> / TIR: <strong>166.29%</strong></td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="py-3 px-4 font-medium">Portfólio GIF IV</td>
+                                <td class="py-3 px-4">Múltiplo: <strong>4.7x</strong> / TIR: <strong>40.50%</strong></td>
+                                <td class="py-3 px-4">Múltiplo: <strong>4.7x</strong> / TIR: <strong>40.60%</strong></td>
                             </tr>
                         </tbody>
                     </table>
@@ -239,6 +275,7 @@
 
 </body>
 </html>
+
 
 
 
